@@ -3,7 +3,7 @@ title: Projects
 hide_title: true
 excerpt: lorem-ipsum
 sections:
-  - title: sProjects
+  - title: Projects
     section_id: lorem-ipsum
     actions: []
     type: section_hero
