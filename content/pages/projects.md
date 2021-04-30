@@ -1,7 +1,7 @@
 ---
 title: Projects
 hide_title: true
-excerpt: 'Porjects '
+excerpt: 'Projects Worked on so far '
 sections: []
 seo:
   title: ''
