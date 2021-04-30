@@ -44,7 +44,7 @@ seo:
       value: website
       keyName: property
     - name: 'og:description'
-      value: The preview of the Fresh theme
+      value: Developer's space
       keyName: property
     - name: 'og:image'
       value: >-
