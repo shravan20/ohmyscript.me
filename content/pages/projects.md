@@ -6,17 +6,19 @@ sections:
   - title: lorem-ipsum
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      ##### Description
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      An Open-Source Project, GitHub Dynamic Quote Generator simply allows you
+      to add an image link in the markdown (README.md) and it will view you a
+      dynamic quote for every user visiting your GitHub account.
 
 
-      - Lorem ipsum
+      *   [Source Code](https://github.com/shravan20/github-readme-quotes)
 
-      - dolor sit amet
+
+      *   [Demo](https://github-readme-quotes.herokuapp.com/)
     actions: []
     type: section_content
   - section_id: lorem-ipsum
