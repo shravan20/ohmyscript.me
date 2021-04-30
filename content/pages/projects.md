@@ -7,7 +7,10 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >
-      ## Description
+      ##### Animated Dynamic Quote for GitHub Profile Readme
+
+
+      ##### Description
 
 
       An Open-Source Project, GitHub Dynamic Quote Generator simply allows you
