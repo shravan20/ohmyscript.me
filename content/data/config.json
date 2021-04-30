@@ -19,7 +19,7 @@
             },
             {
                 "label": "Projects",
-                "url": "#blog",
+                "url": "/contact/",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
