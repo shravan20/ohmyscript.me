@@ -56,7 +56,7 @@ seo:
     - name: 'twitter:title'
       value: OhMyScript
     - name: 'twitter:description'
-      value: The preview of the Fresh theme
+      value: Developer's Space to explore
     - name: 'twitter:image'
       value: >-
         https://raw.githubusercontent.com/shravan20/shravan20/main/assets/Banner.png
