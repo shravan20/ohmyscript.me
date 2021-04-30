@@ -43,10 +43,6 @@ seo:
     - name: 'og:type'
       value: website
       keyName: property
-    - name: 'og:title'
-      value: >-
-        https://raw.githubusercontent.com/shravan20/shravan20/main/assets/Banner.png
-      keyName: property
     - name: 'og:description'
       value: The preview of the Fresh theme
       keyName: property
