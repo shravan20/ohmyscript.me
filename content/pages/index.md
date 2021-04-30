@@ -44,7 +44,7 @@ seo:
       value: website
       keyName: property
     - name: 'og:description'
-      value: Developer's space
+      value: Developer's space to explore
       keyName: property
     - name: 'og:image'
       value: >-
