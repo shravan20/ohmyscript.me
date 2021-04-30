@@ -50,9 +50,10 @@ seo:
       value: The preview of the Fresh theme
       keyName: property
     - name: 'og:image'
-      value: images/4.jpg
+      value: >-
+        https://raw.githubusercontent.com/shravan20/shravan20/main/assets/Banner.png
       keyName: property
-      relativeUrl: true
+      relativeUrl: false
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
