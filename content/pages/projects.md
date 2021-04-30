@@ -19,14 +19,7 @@ sections:
 
 
       *   [Demo](https://github-readme-quotes.herokuapp.com/)
-    actions:
-      - label: lorem-ipsum
-        url: '#'
-        style: link
-        icon_class: dev
-        new_window: false
-        no_follow: false
-        type: action
+    actions: []
     type: section_content
 seo:
   title: ''
