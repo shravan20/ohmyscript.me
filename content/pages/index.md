@@ -6,7 +6,7 @@ sections:
     type: section_hero
     title: 'Hi, I''m Shravan Kumar B.'
     content: |
-      Technology Enthusiast | IoT Enthusiast | Generalizing Specialist
+      Technology Enthusiast | Generalizing Specialist | Curious Creature
   - section_id: about
     type: section_content
     title: About
