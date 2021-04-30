@@ -60,5 +60,8 @@ seo:
       value: >-
         https://raw.githubusercontent.com/shravan20/shravan20/main/assets/Banner.png
       relativeUrl: false
+  description: >
+    Freshly brewed contents on Technology, Programming, Node, JavaScript and
+    other Tech Stack.
 layout: advanced
 ---
