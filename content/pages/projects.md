@@ -6,17 +6,13 @@ sections:
   - title: Animated Dynamic Quote for GitHub Profile README
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      ## Description
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
+      An Open-Source Project, GitHub Dynamic Quote Generator simply allows you
+      to add an image link in the markdown (README.md) and it will view you a
+      dynamic quote for every user visiting your GitHub account.
     actions: []
     type: section_content
 seo:
