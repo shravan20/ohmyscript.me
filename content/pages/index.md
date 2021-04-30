@@ -38,7 +38,6 @@ sections:
         style: button
 seo:
   title: OhMyScript
-  description: The preview of the Fresh theme
   extra:
     - name: 'og:type'
       value: website
