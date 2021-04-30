@@ -3,8 +3,7 @@ title: Projects
 hide_title: true
 excerpt: lorem-ipsum
 sections:
-  - title: ANIMATED dYNAMIC
-    section_id: lorem-ipsum
+  - section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >
       ##### Description
