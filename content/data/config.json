@@ -2,7 +2,7 @@
     "title": "OhMyScript Portfolio",
     "path_prefix": "/",
     "layout_style": "overflow",
-    "palette": "violet",
+    "palette": "green",
     "header": {
         "title": "<OhMyScript>",
         "tagline": "Header Tagline",
