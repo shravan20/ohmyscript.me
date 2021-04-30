@@ -1,7 +1,7 @@
 ---
 title: Projects
 hide_title: true
-excerpt: sdadlorem-ipsum
+excerpt: 'Porjects '
 sections: []
 seo:
   title: ''
