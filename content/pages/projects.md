@@ -3,7 +3,7 @@ title: Projects
 hide_title: true
 excerpt: lorem-ipsum
 sections:
-  - title: lorem-ipsum
+  - title: Animated Dynamic Quote for GitHub Profile README
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
