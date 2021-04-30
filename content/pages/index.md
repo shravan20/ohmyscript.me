@@ -44,7 +44,8 @@ seo:
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Fresh Theme
+      value: >-
+        https://raw.githubusercontent.com/shravan20/shravan20/main/assets/Banner.png
       keyName: property
     - name: 'og:description'
       value: The preview of the Fresh theme
