@@ -10,7 +10,7 @@ sections:
   - section_id: about
     type: section_content
     title: About
-    content: "A very curious creature with a keen interest in technology. Loves to build products that solve problems.\n\n*   Currently exploring Spring Boot and contributing to Open Source Community. \n\n*   Worked on IoT technology and Web Technologies( MEAN / MERN ).\n\n*   Currently working and exploring React with Redux Architecture and Express Framework, along with TypeScript.\_\n"
+    content: "A very curious creature with a keen interest in technology. Loves to build products that solve problems.\n\n*   Currently exploring Spring Boot and contributing to Open Source Community.\n\n*   Worked on IoT technology and Web Technologies( MEAN / MERN ).\n\n*   ![](https://github.githubassets.com/images/icons/emoji/unicode/1f46f.png)\_ Currently working and exploring React with Redux Architecture and Express Framework, along with TypeScript.\_\n"
     actions:
       - label: Contact Me
         url: /contact
