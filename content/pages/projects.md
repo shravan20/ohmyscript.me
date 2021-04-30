@@ -21,7 +21,7 @@ sections:
       *   [Demo](https://github-readme-quotes.herokuapp.com/)
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Project
     section_id: lorem-ipsum
     content: >-
       ## Lorem ipsum
