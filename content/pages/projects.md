@@ -3,6 +3,22 @@ title: Projects
 hide_title: true
 excerpt: lorem-ipsum
 sections:
+  - title: lorem-ipsum
+    section_id: lorem-ipsum
+    image_alt: lorem-ipsum
+    content: >-
+      ## Lorem ipsum
+
+
+      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+      - Lorem ipsum
+
+      - dolor sit amet
+    actions: []
+    type: section_content
   - section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >
@@ -18,22 +34,6 @@ sections:
 
 
       *   [Demo](https://github-readme-quotes.herokuapp.com/)
-    actions: []
-    type: section_content
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
-
-
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
     actions: []
     type: section_content
 seo:
