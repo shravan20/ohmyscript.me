@@ -58,7 +58,8 @@ seo:
     - name: 'twitter:description'
       value: The preview of the Fresh theme
     - name: 'twitter:image'
-      value: images/4.jpg
-      relativeUrl: true
+      value: >-
+        https://raw.githubusercontent.com/shravan20/shravan20/main/assets/Banner.png
+      relativeUrl: false
 layout: advanced
 ---
