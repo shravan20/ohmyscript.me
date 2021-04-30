@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Projects
 seo:
   title: Blog
   description: This is the blog page
