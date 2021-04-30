@@ -7,7 +7,7 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >
-      ##### Animated Dynamic Quote for GitHub Profile Readme
+      ## Animated Dynamic Quote for GitHub Profile Readme
 
 
       ##### Description
