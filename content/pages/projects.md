@@ -3,7 +3,7 @@ title: Projects
 hide_title: true
 excerpt: lorem-ipsum
 sections:
-  - title: lorem-ipsum
+  - title: Obstacle Detection and Avoidance Robot
     section_id: lorem-ipsum
     posts_number: 0
     actions: []
