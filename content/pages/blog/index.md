@@ -26,4 +26,5 @@ seo:
       value: images/1.jpg
       relativeUrl: true
 layout: blog
+title: Projects
 ---
