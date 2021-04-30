@@ -9,9 +9,10 @@ sections:
       Technology Enthusiast | Generalizing Specialist | Curious Creature
 
 
-
-
       ![](https://lh3.googleusercontent.com/-wVMypTMiU8s/XaHj8DfVC_I/AAAAAAAAAOs/5pgA5Bu-wMADh63Lmzb3Oya6FT6pfS2EACEwYBhgLKtQDAL1Ocqw15Ossz0FxTajx3tPdXqJf-47StLYMq8RkuyXq9QQ2P9DPkz9lvOV3iOKjCAOSOP0DWjzAVcbt_KomdpJYWHPVTUPKxqCHZj4a-YFVMFbjlsYRabKKwTP4iZ2Eg4T7Pjt3H9hOK0aVzDNxUPRPSezj2VGy3FVtWamPO_Mf6JuHd9c0Zlb9pNlkDjoa-hICb8goSnjlXudySYNJG0pnB4hTW4enE82zYR3-ov_uR5Qab_lc3NDOSTMwght3to_gVUtMBTalW5zMDQmhMFX-S2rZahinYJGY64-6yx2E10E_Jwwrp8dbSGNPkPLg_J5oQd8j30e4IhkmlbddLxTgz20DRJRUQfz9kuEyKiDHTSp8Uw6HfxQVpWwJsE0lzqkqEKOj5JPWsQDWvG6RTGB-cL54nGOwlLa9sYKOEQDErjq4qF-KdIm4mBOM9bzzTNoocQhwOV4bad-tf6-mbf-eiBwJXjtD7lC25kHlZ77uecDv62bF08xQJDOrCQ4chYhb-vfpWdsbaDfaMISfCY2RV5lHehdRtuqybrggQb0WOyVmplPzumWq-048l7AizCem1Ubc9a6HfMBwcJVseiCPp0UXfGYjlP4AfYizQCZRoOStMIOdsYQG/w140-h140-p/pp.jpeg)
+
+
+      > Shravan Kumar B
   - section_id: about
     type: section_content
     title: About
