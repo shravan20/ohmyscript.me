@@ -22,9 +22,6 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >
-      ##
-
-
       This project aimed at designing a Garbage Collection System using a Robot
       in the Indoors based on Indoor Positioning System using Internet of
       Things. A smart bin was deployed which would notify the Collector Robot to
