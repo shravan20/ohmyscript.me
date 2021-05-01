@@ -18,7 +18,7 @@ sections:
       *   [Demo](https://github-readme-quotes.herokuapp.com/)
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Autonomous Garbage Collecting System using Internet of Things
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >
