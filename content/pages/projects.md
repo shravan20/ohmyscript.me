@@ -1,7 +1,7 @@
 ---
 title: Projects
 hide_title: true
-excerpt: 'My Works  '
+excerpt: 'My Works so far '
 sections:
   - title: ANIMATED DYNAMIC QUOTE FOR GITHUB PROFILE README
     section_id: lorem-ipsum
