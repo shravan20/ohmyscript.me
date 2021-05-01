@@ -30,16 +30,16 @@ sections:
 
       A system consisting of a smart bin and an Autonomous Garbage Collecting
       Robot collects the garbage from the bin when the garbage threshold level
-      is reached. 
+      is reached.
 
 
       Major challenges that were solved :
 
 
-      1.  Path Planning for the locomotion of the Robot
+      ###### Path Planning for the locomotion of the Robot
 
 
-      2.  Autonomous Control of the Robot
+      ###### Autonomous Control of the Robot
 
 
       *   [Published IEEE
