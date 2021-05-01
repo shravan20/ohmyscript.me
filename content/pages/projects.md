@@ -101,7 +101,7 @@ sections:
       Stack: Bootstrap UI library, AngularJS, jQuery, Expressjs, MongoDB 
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Zoo management information system
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
