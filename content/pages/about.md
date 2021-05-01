@@ -30,7 +30,7 @@ seo:
       relativeUrl: true
 layout: page
 ---
-##### Shravan is a Jr Software Developer, loves exploring, traveling, and reading books. A keen and curious human when it comes to technology and different human aspects of life.&#xA;&#xA;He is such a tireless seeker of knowledge. He loves to learn new things and explore them and by nature a practical learner. You best describe him as a spiritual learning generalist with a passion for excellence.
+##### Shravan is a Jr Software Developer, loves exploring, traveling, and reading books. A keen and curious human when it comes to technology and different human aspects of life.&#xA; &#xA;He is such a tireless seeker of knowledge. He loves to learn new things and explore them and by nature a practical learner. You best describe him as a spiritual learning generalist with a passion for excellence.
 
 That's enough of talking about myself in the third person.
 
