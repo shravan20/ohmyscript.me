@@ -26,17 +26,19 @@ sections:
   - title: lorem-ipsum
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      ## Autonomous Garbage Collecting System using Internet of Things&#xA;
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      This project aimed at designing a Garbage Collection System using a Robot
+      in the Indoors based on Indoor Positioning System using Internet of
+      Things. A smart bin was deployed which would notify the Collector Robot to
+      collect the garbage as and when it was filled.
 
 
-      - Lorem ipsum
+      *   Lorem ipsum
 
-      - dolor sit amet
+      *   dolor sit amet
     actions: []
     type: section_content
 seo:
