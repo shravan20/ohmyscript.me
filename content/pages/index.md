@@ -36,7 +36,7 @@ sections:
     title: Recent Projects
     posts_number: 4
     actions:
-      - label: View Blog
+      - label: View projects
         url: blog/index.html
         style: button
 seo:
