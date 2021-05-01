@@ -27,7 +27,7 @@ sections:
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >
-      ## Autonomous Garbage Collecting System using Internet of Things&#xA;
+      ##
 
 
       This project aimed at designing a Garbage Collection System using a Robot
