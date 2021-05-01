@@ -23,10 +23,10 @@ sections:
         label: Subject
         default_value: Please select
         options:
+          - Collaborate for Open Source
           - Error on the site
           - Sponsorship
           - Other
-          - Collaborate for Open Source
       - input_type: textarea
         name: message
         label: Message
