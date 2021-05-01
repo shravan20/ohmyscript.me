@@ -46,7 +46,7 @@ sections:
       locomotion of the Robot** & **Autonomous Control of the Robot**.
 
 
-      Tech Stack: Python, C++, ESP32, Raspberry Pi
+      Stack: Python, C++, ESP32, Raspberry Pi
 
 
       *   [Published IEEE
