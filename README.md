@@ -19,6 +19,6 @@
 
 1. 🎉 Et voila!!
 
-## Colophon
+## Special Thanks
 
 Hosted at `2021-04-30T16:47:32.443Z` by Stackbit version `0.3.51`.
