@@ -36,9 +36,6 @@ sections:
     title: Recent Projects
     posts_number: 4
     actions:
-      - label: View projects
-        url: blog/index.html
-        style: button
       - label: lorem-ipsum
         url: '#'
         style: link
@@ -46,6 +43,9 @@ sections:
         new_window: false
         no_follow: false
         type: action
+      - label: View projects
+        url: blog/index.html
+        style: button
 seo:
   title: OhMyScript
   extra:
