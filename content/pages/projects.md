@@ -36,6 +36,9 @@ sections:
       is reached.
 
 
+      ![](/images/CPT2105010829-356x292.png)
+
+
       Two major challenges were solved, firstly **Path Planning for the
       locomotion of the Robot** & **Autonomous Control of the Robot**.
 
