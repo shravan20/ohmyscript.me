@@ -27,17 +27,22 @@ sections:
   - title: Smart Corona Mask
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      Designed a Smark Mask - Corona, for the Hackathon event, which consisted
+      of a Smart Mask that beeped whenever two people violated social
+      distancing, which was connected using Bluetooth Technology, also stored
+      the data in who came in contact with the person on the server-side. A
+      Mobile application was designed, to view this data and general stats
+      regarding Corona.
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
-      - Lorem ipsum
+      Stack: Arduino, C++, Bluetooth Technology, Spring Boot, React Native,
+      MySQL
 
-      - dolor sit amet
+
+      *   [Source Code](https://github.com/shravan20/nl-hackathon-2020-iot)
     actions: []
     type: section_content
   - title: Autonomous Garbage Collecting System using Internet of Things
