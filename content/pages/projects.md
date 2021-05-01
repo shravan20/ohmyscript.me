@@ -104,17 +104,18 @@ sections:
   - title: Zoo management information system
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      The DBMS project for academic purposes, aimed at solving all the problems
+      faced by a Zoo to manage all the workflow from incoming animals,
+      employees, and everyday coming visitors' data.
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Stack: HTML5, CSS3, PHP, MySQL, XAMPP
 
 
-      - Lorem ipsum
 
-      - dolor sit amet
+
+      *   [Source Code](https://github.com/shravan20/dbms-zoo-mgmt-system)
     actions: []
     type: section_content
 seo:
