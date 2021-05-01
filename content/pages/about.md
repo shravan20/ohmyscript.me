@@ -31,19 +31,28 @@ seo:
 layout: page
 ---
 > Shravan is a Jr Software Developer, loves exploring, traveling, and reading books. A keen and curious human when it comes to technology and different human aspects of life.
+>
+> He is such a tireless seeker of knowledge. He loves to learn new things and explore them and by nature a practical learner. You best describe him as spiritual learning generalist with passion towards excellence.
 
-> He is such a tireless seeker of knowledge. He loves to learn new things and explore them and by nature a practical learner.
+
+
+That's enough of talking about myself in the third person.
 
 
 
-As you already know, I am Shravan, Jr Software Developer. Apart from that general information, I love traveling, reading books. I am a curious human and love exploring different aspects of life and technology. Always like the
+As you already know, I am Shravan Kumar B, you can call me SK. Apart from that general information, you also now know I love traveling, reading books and that I am a keen learner.
 
-As you already know, I am Shravan, Jr Software Developer. After graduating with a degree in Computer Science, I started my pursue in doing what I love worked for three small graphic design shops where he honed his design style and sensibility.
+After graduating with a degree in Computer Science, I started my journey in a startup, doing what I love, i.e., building products and solving problems. I have worked on a couple of technologies, I am looking forward to exploring more. I contribute to open source and love the Open Source Community. 
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2019.
 
-> The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
 
-As a hobby, John Doe authors the most influential design blog in Sweden with over 100,000 page views a month. He lives in Stockholm with his beautiful wife and two boys.
+> Sometimes failure is the best way to figure out where life is going. 
+> \- [shravan20](https://github.com/shravan20)
+
+
+
+As a hobby, I sometimes write blogs to record my learnings and knowledge portfolio. 
+
+**
 
 *Thank You for reading!*
