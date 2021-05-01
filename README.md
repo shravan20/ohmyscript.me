@@ -17,7 +17,7 @@
 
 1. Open [http://localhost:3000/](http://localhost:3000/) in the browser
 
-1. 🎉
+1. 🎉 Et voila!!
 
 ## Colophon
 
