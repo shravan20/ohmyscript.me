@@ -28,9 +28,29 @@ sections:
       collect the garbage as and when it was filled.
 
 
-      *   Lorem ipsum
+      A system consisting of a smart bin and an Autonomous Garbage Collecting
+      Robot collects the garbage from the bin when the garbage threshold level
+      is reached. 
 
-      *   dolor sit amet
+
+      Major challenges that were solved :
+
+
+      1.  Path Planning for the locomotion of the Robot
+
+
+      2.  Autonomous Control of the Robot
+
+
+      *   [Published IEEE
+      paper](https://github.com/shravan20/certificates/blob/main/Publications/Autonomous%20Garbage%20Collection%20System%20using%0AInternet%20of%20Things/10F.pdf)
+
+
+      <!---->
+
+
+      *   [Source
+      Code](https://github.com/shravan20/certificates/blob/main/Publications/Autonomous%20Garbage%20Collection%20System%20using%0AInternet%20of%20Things/10F.pdf)
     actions: []
     type: section_content
 seo:
