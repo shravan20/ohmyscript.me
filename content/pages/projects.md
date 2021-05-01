@@ -118,7 +118,7 @@ sections:
       *   [Source Code](https://github.com/shravan20/dbms-zoo-mgmt-system)
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Obstacle detection and avoidance robot
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
