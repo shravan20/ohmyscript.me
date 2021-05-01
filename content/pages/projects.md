@@ -50,7 +50,7 @@ sections:
       Code](https://github.com/shravan20/certificates/blob/main/Publications/Autonomous%20Garbage%20Collection%20System%20using%0AInternet%20of%20Things/10F.pdf)
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Internal E Banking Website
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
