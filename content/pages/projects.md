@@ -12,6 +12,9 @@ sections:
       dynamic quote for every user visiting your GitHub account.
 
 
+      ![](https://raw.githubusercontent.com/shravan20/github-readme-quotes/main/assets/README.png)
+
+
       *   [Source Code](https://github.com/shravan20/github-readme-quotes)
 
 
