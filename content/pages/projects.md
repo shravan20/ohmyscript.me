@@ -69,9 +69,8 @@ sections:
       Stack: Bootstrap UI library, PHP, MySQL
 
 
-      *   Lorem ipsum
-
-      *   dolor sit amet
+      *   [Source
+      Code](https://github.com/shravan20?after=Y3Vyc29yOnYyOpK5MjAyMC0xMi0zMVQwMzo0MDoxMyswNTozMM4TaSTo\&language=\&q=\&sort=\&tab=repositories)
     actions: []
     type: section_content
 seo:
