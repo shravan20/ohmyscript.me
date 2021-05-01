@@ -90,17 +90,13 @@ sections:
   - title: lorem-ipsum
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      This Web Development project was completed to fulfill the requirement of
+      the internship. It was an Online Food Portal, to view the menu, and give a
+      review of a Hotel. 
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
+      Stack: Bootstrap UI library, AngularJS, jQuery, Expressjs, MongoDB 
     actions: []
     type: section_content
 seo:
