@@ -40,7 +40,7 @@ After graduating with a degree in Computer Science, I started my journey in a st
 
 > ###### I am brave enough to suck at something new.
 >
-> \- [shravan20](https://github.com/shravan20)
+> ###### - [shravan20](https://github.com/shravan20)
 
 As a hobby, I sometimes write blogs to record my learnings and knowledge portfolio.
 
