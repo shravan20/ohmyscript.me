@@ -23,6 +23,7 @@ sections:
         label: Subject
         default_value: Please select
         options:
+          - Collaborate for Open Source
           - Error on the site
           - Sponsorship
           - Other
