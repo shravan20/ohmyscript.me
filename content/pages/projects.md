@@ -34,9 +34,7 @@ sections:
 
 
       Two major challenges were solved, firstly **Path Planning for the
-      locomotion of the Robot **& **Autonomous Control of the Robot**.
-
-
+      locomotion of the Robot** & **Autonomous Control of the Robot**.
 
 
       *   [Published IEEE
