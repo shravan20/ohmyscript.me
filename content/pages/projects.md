@@ -53,17 +53,19 @@ sections:
   - title: Internal E Banking Website
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      The project was an Internal eBanking System, which is a full-fletched web
+      application where you can transfer money to other users and can have a
+      close watch on all your transactions with other banking facilities
+      available.
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Tech Stack: , Bootstrap UI library, PHP, MySQL
 
 
-      - Lorem ipsum
+      *   Lorem ipsum
 
-      - dolor sit amet
+      *   dolor sit amet
     actions: []
     type: section_content
 seo:
