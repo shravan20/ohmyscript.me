@@ -15,6 +15,9 @@ sections:
       ![](https://raw.githubusercontent.com/shravan20/github-readme-quotes/main/assets/README.png)
 
 
+      Stack: Express.js, React
+
+
       *   [Source Code](https://github.com/shravan20/github-readme-quotes)
 
 
