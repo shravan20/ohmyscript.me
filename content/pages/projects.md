@@ -76,17 +76,15 @@ sections:
   - title: Smart Garbage Van Tracking and Alert System using IoT
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      The project was completed using the Raspberry Pi platform, and an MIT
+      android application was created to notify the truck driver about the
+      location of the Dustbin which is filled with the amount of Garbage filled.
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-
-      - Lorem ipsum
-
-      - dolor sit amet
+      *   [Source
+      Code](https://github.com/shravan20?after=Y3Vyc29yOnYyOpK5MjAyMC0xMi0zMVQwMzo0MDoxMyswNTozMM4TaSTo\&language=\&q=\&sort=\&tab=repositories)
     actions: []
     type: section_content
 seo:
