@@ -26,7 +26,7 @@ sections:
           - Error on the site
           - Sponsorship
           - Other
-          - Collaborate Open Source
+          - Collaborate for Open Source
       - input_type: textarea
         name: message
         label: Message
