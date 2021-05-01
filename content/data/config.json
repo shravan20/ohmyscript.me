@@ -71,6 +71,6 @@
     "footer": {
         "content": "&copy; Hosted By Stackbit and Netlify."
     },
-    "domain": "http://me.ohmyscript.com/",
+    "domain": "https://me.ohmyscript.com/",
     "favicon": "images/best-eggplant.png"
 }
