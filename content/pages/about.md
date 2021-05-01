@@ -38,7 +38,7 @@ As you already know, I am Shravan Kumar B, you can call me SK. Apart from that g
 
 After graduating with a degree in Computer Science, I started my journey in a startup, doing what I love, i.e., building products and solving problems. I have worked on a couple of technologies, I am looking forward to exploring more. I contribute to open source and love the Open Source Community.
 
-> I am brave enough to suck at something new.
+> ###### I am brave enough to suck at something new.
 >
 > \- [shravan20](https://github.com/shravan20)
 
