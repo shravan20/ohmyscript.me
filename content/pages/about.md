@@ -34,9 +34,9 @@ layout: page
 
 ##### He is such a tireless seeker of knowledge. He loves to learn new things and explore them and by nature a practical learner. You best describe him as a spiritual learning generalist with a passion for excellence.
 
-\---------------
 
-That's enough of talking about myself in the third person.
+
+That's enough of talking about myself in the third person 😂
 
 As you already know, I am Shravan Kumar B, you can call me SK. Apart from that general information, you also now know I love traveling, reading books and that I am a keen learner.
 
