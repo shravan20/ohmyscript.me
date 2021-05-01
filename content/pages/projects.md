@@ -126,9 +126,11 @@ sections:
       Avoidance Robot using Arduino Uno and Ultrasonic Sensors.
 
 
-      Stack: Arduino Uno, C++, Sensors[
+      Stack: Arduino Uno, C++, Sensors
 
-      ](https://www.linkedin.com/in/shravankb/detail/project/1551755279/contributors/)
+
+      *   [Source Code](https://github.com/shravan20/obstacle-detection-bot)[
+          ](https://www.linkedin.com/in/shravankb/detail/project/1551755279/contributors/)
     actions: []
     type: section_content
 seo:
