@@ -1,6 +1,6 @@
 ---
 title: About Me
-img_path: images/intro.jpg
+img_path: images/Banner.png
 img_alt: Portrait of a man with beard and mustache
 seo:
   title: About Me
