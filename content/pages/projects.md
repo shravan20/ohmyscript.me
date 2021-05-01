@@ -73,7 +73,7 @@ sections:
       Code](https://github.com/shravan20?after=Y3Vyc29yOnYyOpK5MjAyMC0xMi0zMVQwMzo0MDoxMyswNTozMM4TaSTo\&language=\&q=\&sort=\&tab=repositories)
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Smart Garbage Van Tracking and Alert System using IoT
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
