@@ -30,13 +30,9 @@ seo:
       relativeUrl: true
 layout: page
 ---
-\<cite> Shravan is a Jr Software Developer, loves exploring, traveling, and reading books. A keen and curious human when it comes to technology and different human aspects of life. 
+> Shravan is a Jr Software Developer, loves exploring, traveling, and reading books. A keen and curious human when it comes to technology and different human aspects of life.
 
-He is such a tireless seeker of knowledge. He loves to learn new things and explore them and by nature a practical learner.
-
-\</cite>
-
-
+> He is such a tireless seeker of knowledge. He loves to learn new things and explore them and by nature a practical learner.
 
 
 
