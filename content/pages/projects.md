@@ -43,10 +43,6 @@ sections:
       *   [Published IEEE
       paper](https://github.com/shravan20/certificates/blob/main/Publications/Autonomous%20Garbage%20Collection%20System%20using%0AInternet%20of%20Things/10F.pdf)
 
-
-      <!---->
-
-
       *   [Source
       Code](https://github.com/shravan20/certificates/blob/main/Publications/Autonomous%20Garbage%20Collection%20System%20using%0AInternet%20of%20Things/10F.pdf)
     actions: []
