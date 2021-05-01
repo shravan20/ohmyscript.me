@@ -66,7 +66,7 @@ sections:
       available.
 
 
-      Tech Stack: , Bootstrap UI library, PHP, MySQL
+      Stack: Bootstrap UI library, PHP, MySQL
 
 
       *   Lorem ipsum
