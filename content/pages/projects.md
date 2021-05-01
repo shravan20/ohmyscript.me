@@ -121,17 +121,14 @@ sections:
   - title: Obstacle detection and avoidance robot
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
+    content: >
+      Mini project on Embedded Systems exhibiting an Obstacle Detection and
+      Avoidance Robot using Arduino Uno and Ultrasonic Sensors.
 
 
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Stack: Arduino Uno, C++, Sensors[
 
-
-      - Lorem ipsum
-
-      - dolor sit amet
+      ](https://www.linkedin.com/in/shravankb/detail/project/1551755279/contributors/)
     actions: []
     type: section_content
 seo:
