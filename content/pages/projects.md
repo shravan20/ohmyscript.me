@@ -24,7 +24,7 @@ sections:
       *   [Demo](https://github-readme-quotes.herokuapp.com/)
     actions: []
     type: section_content
-  - title: lorem-ipsum
+  - title: Smart Corona Mask
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
