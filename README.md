@@ -1,4 +1,4 @@
-# ✨ OhMyScript ✨
+# ✨ Portfolio ✨
 
 
 ## Develop Locally
