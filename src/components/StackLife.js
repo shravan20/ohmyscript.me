@@ -90,9 +90,6 @@ export default function StackLife() {
             <div className="container">
                 <div className="stack-life-header">
                     <h2 className="section-title">My Current Stack Life</h2>
-                    <button className="shuffle-btn" aria-label="Shuffle content">
-                        🔀 Shuffle
-                    </button>
                 </div>
 
                 <div className="stack-life-grid">

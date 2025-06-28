@@ -6,7 +6,7 @@
 
 .stack-life-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: var(--spacing-12);
   
@@ -14,22 +14,7 @@
     font-size: var(--font-size-3xl);
     font-weight: 700;
     color: var(--color-primary);
-  }
-  
-  .shuffle-btn {
-    background: transparent;
-    border: 1px solid var(--color-border);
-    color: var(--color-secondary);
-    padding: var(--spacing-2) var(--spacing-4);
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    font-size: var(--font-size-sm);
-    transition: all 0.2s ease;
-    
-    &:hover {
-      border-color: var(--color-accent);
-      color: var(--color-accent);
-    }
+    font-family: var(--font-heading);
   }
 }
 

@@ -4,87 +4,124 @@
   background-color: var(--color-surface);
 }
 
-.tech-grid {
+.tech-categories {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-6);
+  grid-template-columns: 1fr;
+  gap: var(--spacing-10);
   margin-top: var(--spacing-12);
   
-  @media (min-width: 480px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
   @media (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-8);
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-10);
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: var(--spacing-6);
+.tech-category {
   background-color: var(--color-background);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-lg);
+  padding: var(--spacing-8);
   transition: all 0.3s ease;
   
   &:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
     border-color: var(--color-accent);
   }
 }
 
-.tech-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: var(--border-radius);
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  margin-bottom: var(--spacing-6);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--spacing-4);
-  position: relative;
-  overflow: hidden;
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  color: white;
+}
+
+.category-title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0;
+  font-family: var(--font-heading);
+}
+
+.skills-grid {
+  display: grid;
+  gap: var(--spacing-3);
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-3) var(--spacing-4);
+  background-color: var(--color-surface);
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-    border-radius: var(--border-radius);
-  }
-  
-  span {
-    font-size: 24px;
-    color: white;
-    z-index: 1;
-    position: relative;
+  &:hover {
+    background-color: var(--color-border);
+    transform: translateX(4px);
   }
 }
 
-.tech-name {
-  font-size: var(--font-size-sm);
+.skill-name {
+  font-size: var(--font-size-base);
   font-weight: 500;
   color: var(--color-primary);
 }
 
-// Tech icon colors (these would be better implemented with actual SVG icons)
-.tech-item:nth-child(1) .tech-icon { background-color: #61DAFB; }
-.tech-item:nth-child(2) .tech-icon { background-color: #339933; }
-.tech-item:nth-child(3) .tech-icon { background-color: #3178C6; }
-.tech-item:nth-child(4) .tech-icon { background-color: #000000; }
-.tech-item:nth-child(5) .tech-icon { background-color: #47A248; }
-.tech-item:nth-child(6) .tech-icon { background-color: #2496ED; }
-.tech-item:nth-child(7) .tech-icon { background-color: #232F3E; }
-.tech-item:nth-child(8) .tech-icon { background-color: #F05032; }
+.skill-level {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--border-radius-sm);
+  background-color: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: var(--font-mono);
+}
+
+// Responsive adjustments
+@media (max-width: 767px) {
+  .tech-categories {
+    gap: var(--spacing-6);
+  }
+  
+  .tech-category {
+    padding: var(--spacing-6);
+  }
+  
+  .category-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .skill-item {
+    padding: var(--spacing-2) var(--spacing-3);
+  }
+  
+  .skill-name {
+    font-size: var(--font-size-sm);
+  }
+  
+  .skill-level {
+    font-size: var(--font-size-xs);
+  }
+}
