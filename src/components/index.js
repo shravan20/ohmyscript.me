@@ -9,6 +9,14 @@ import SectionForm from './SectionForm';
 import SectionHero from './SectionHero';
 import SectionPosts from './SectionPosts';
 
+// New components
+import Hero from './Hero';
+import TechStack from './TechStack';
+import Projects from './Projects';
+import Articles from './Articles';
+import Newsletter from './Newsletter';
+import StackLife from './StackLife';
+
 export {
     CtaButtons,
     Footer,
@@ -19,7 +27,13 @@ export {
     SectionContent,
     SectionForm,
     SectionHero,
-    SectionPosts
+    SectionPosts,
+    Hero,
+    TechStack,
+    Projects,
+    Articles,
+    Newsletter,
+    StackLife
 };
 
 export default {
@@ -32,5 +46,11 @@ export default {
     SectionContent,
     SectionForm,
     SectionHero,
-    SectionPosts
+    SectionPosts,
+    Hero,
+    TechStack,
+    Projects,
+    Articles,
+    Newsletter,
+    StackLife
 };
