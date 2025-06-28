@@ -15,6 +15,7 @@ import TechStack from './TechStack';
 import Projects from './Projects';
 import Articles from './Articles';
 import Newsletter from './Newsletter';
+import StackLife from './StackLife';
 
 export {
     CtaButtons,
@@ -31,7 +32,8 @@ export {
     TechStack,
     Projects,
     Articles,
-    Newsletter
+    Newsletter,
+    StackLife
 };
 
 export default {
@@ -49,5 +51,6 @@ export default {
     TechStack,
     Projects,
     Articles,
-    Newsletter
+    Newsletter,
+    StackLife
 };
