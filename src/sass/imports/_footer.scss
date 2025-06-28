@@ -2,16 +2,25 @@
  * Site Footer
  */
 .site-footer {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(135deg, _palette(dark-bg) 0%, _palette(bg) 100%);
   border-top: 1px solid _palette(border);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2.5em;
+  padding: 1.5em 3vw;
+  margin-top: 2em;
+  
+  // Responsive layout adjustments
+  @media only screen and (min-width: 801px) {
+    padding: 1.5em 3vw;
+  }
 
-  .site-info {
+  @media only screen and (min-width: 1001px) {
+    padding: 1.5em 3vw;
+  }  .site-info {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -23,25 +32,23 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-size: 11px;
-    letter-spacing: 0.09em;
+    font-size: 12px;
+    letter-spacing: 0.05em;
     line-height: 1.5;
     margin-bottom: 0;
-    text-transform: uppercase;
-
-    .copyright,
+    text-transform: none;
+    opacity: 0.8;    .copyright,
     > a {
-      font-size: 11px;
+      font-size: 12px;
       margin-bottom: 0.5em;
       margin-right: 8px;
+      opacity: 0.9;
     }
 
     .button {
       padding: 0.58182em 15px;
     }
-  }
-
-  .to-top {
+  }  .to-top {
     border: 0;
     color: _palette(primary);
     display: none;
@@ -52,6 +59,10 @@
     margin-left: auto;
     position: relative;
     width: 30px;
+    
+    &:hover {
+      color: _palette(accent-teal);
+    }
   }
 
   @media only screen and (max-width: 800px) {

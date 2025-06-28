@@ -9,9 +9,10 @@ html {
 }
 
 body {
-  background: #fff;
+  background: _palette(bg);
   color: _palette(primary);
-  line-height: 1.66667;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 a {
@@ -93,11 +94,19 @@ pre {
   font-size: 0.88889rem;
 }
 
+code {
+  background: _palette(card-bg);
+  border-radius: 3px;
+  color: _palette(accent-teal);
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
 pre {
-  background-color: _palette(bg);
+  background-color: _palette(dark-bg);
   border: 1px solid _palette(border);
   border-radius: 5px;
-  color: _palette(secondary);
+  color: _palette(primary);
   margin: 1.66667rem 0;
   overflow: auto;
   padding: 1.33333em;
@@ -110,13 +119,14 @@ pre {
 }
 
 blockquote {
-  border-bottom: 1px solid _palette(secondary);
-  border-top: 3px solid _palette(secondary);
+  background: _palette(card-bg);
+  border-left: 4px solid _palette(accent-teal);
+  border-radius: 8px;
   font-size: 1.88889em;
   line-height: 1.25;
   margin: 2rem 0;
-  padding-bottom: 1.66667rem;
-  padding-top: 1.33333rem;
+  padding: 1.33333rem 1.66667rem;
+  color: _palette(primary);
 
   &:first-child {
     margin-top: 0
@@ -227,10 +237,10 @@ input[type="search"],
 input[type="url"],
 select,
 textarea {
-  background: _palette(bg);
-  border: 1px solid _palette(border);
-  border-radius: 5px;
-  box-shadow: none;
+  background: _palette(card-bg);
+  border: 2px solid _palette(border);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   color: _palette(primary);
   display: inline-block;
@@ -238,11 +248,14 @@ textarea {
   font-weight: normal;
   line-height: 1.5;
   max-width: 100%;
-  padding: 0.5em 10px;
+  padding: 0.75em 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   vertical-align: baseline;
   width: 100%;
 
   &:focus {
+    border-color: #06b6d4;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
     outline: 0;
   }
 }
@@ -258,10 +271,10 @@ textarea {
 .form-select-wrap {
   font-size: 16px;
   position: relative;
-
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     padding-right: 25px;
 
     &:focus {
@@ -331,30 +344,33 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 .button {
-  background: _palette(accent);
-  border: 2px solid _palette(accent);
-  border-radius: 30px;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  border: 2px solid transparent;
+  border-radius: 8px;
   box-sizing: border-box;
   color: #fff;
   display: inline-block;
   font-size: 14px;
-  letter-spacing: 0.075em;
+  font-weight: 600;
+  letter-spacing: 0.025em;
   line-height: 1.2;
-  padding: 0.75714em 35px;
+  padding: 0.875em 2rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  text-transform: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover,
   &:focus,
   &:active {
-    background: transparent;
-    border-color: _palette(accent);
-    box-shadow: 0 0 1px 0.5em rgba(_palette(accent),.2);
-    color: _palette(secondary);
+    background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+    color: #fff;
     outline: 0;
+    transform: translateY(-2px);
   }
 }
 

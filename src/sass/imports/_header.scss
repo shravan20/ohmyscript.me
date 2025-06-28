@@ -2,9 +2,22 @@
  * Site Header
  */
 .site-header {
-  background: #fff;
+  background: _palette(dark-bg);
   border-bottom: 1px solid _palette(border);
   color: _palette(primary);
+  backdrop-filter: blur(10px);
+  
+  &.dark {
+    background: linear-gradient(135deg, rgba(_palette(dark-bg), 0.95) 0%, rgba(_palette(bg), 0.95) 100%);
+    border-bottom-color: _palette(border);
+    color: _palette(primary);
+  }
+}
+
+.site-navigation {
+  background: _palette(card-bg);
+  border-left: 1px solid _palette(border);
+  // ...existing code...
 }
 
 .site-header-inside {
@@ -84,7 +97,7 @@
 }
 
 .site-navigation {
-  background: #fff;
+  background: _palette(card-bg);
   bottom: 0;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;

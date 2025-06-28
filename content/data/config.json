@@ -2,7 +2,7 @@
     "title": "OhMyScript Portfolio",
     "path_prefix": "/",
     "layout_style": "overflow",
-    "palette": "green",
+    "palette": "modern",
     "header": {
         "title": "<OhMyScript/>",
         "profile_img": "images/circle-cropped.png",

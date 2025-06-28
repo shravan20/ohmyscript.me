@@ -43,16 +43,51 @@
 /* Hero section */
 .block-hero {
   margin-bottom: 3.33333em;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, _palette(bg) 0%, _palette(dark-bg) 100%);
+  border-radius: 16px;
 
   .block-title {
     font-size: 2.66667em;
     margin-bottom: 1rem;
     margin-top: 0;
+    background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
   }
 
   .block-content {
     font-size: 1.33333em;
     line-height: 1.5;
+    color: _palette(meta);
+  }
+}
+
+/* Content blocks styling */
+.block-content {
+  background: _palette(card-bg);
+  border: 1px solid _palette(border);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(6, 182, 212, 0.25);
+  }
+}
+
+/* Section alternating backgrounds */
+.section {
+  background: _palette(bg);
+  
+  &:nth-child(even) {
+    background: linear-gradient(135deg, _palette(dark-bg) 0%, _palette(bg) 100%);
+    padding: 3rem 0;
   }
 }
 

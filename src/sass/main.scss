@@ -7,15 +7,21 @@ $font: (
 
 // Palette.
 $palette: (
-  primary:       #555e69,
-  secondary:     darken(#555e69, 15%),
-  meta:          lighten(#555e69, 25%),
-  border:        lighten(#555e69, 55%),
-  bg:            lighten(#555e69, 60%),
-  accent:        #1de2bc,
-  accent-blue:   #10bcf9,
-  accent-violet: #9371e6,
-  accent-orange: #fc6e51
+  primary:       #e2e8f0,
+  secondary:     #f1f5f9,
+  meta:          #94a3b8,
+  border:        #334155,
+  bg:            #0f172a,
+  accent:        #06b6d4,
+  accent-blue:   #0ea5e9,
+  accent-violet: #8b5cf6,
+  accent-orange: #f59e0b,
+  accent-teal:   #14b8a6,
+  accent-gradient-start: #0ea5e9,
+  accent-gradient-end:   #06b6d4,
+  dark-bg:       #020617,
+  card-bg:       #1e293b,
+  surface:       #475569
 );
 
 @import "imports/functions";
