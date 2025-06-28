@@ -1,26 +1,32 @@
 import React from 'react';
-import _ from 'lodash';
+import { Link, withPrefix } from '../utils';
 
-import {htmlToReact, Link, withPrefix, classNames} from '../utils';
+export default function Footer({ data }) {
+    const currentYear = new Date().getFullYear();
 
-export default class Footer extends React.Component {
-    render() {
-        return (
-            <footer id="colophon" className="site-footer inner-sm">
-              <p className="site-info">
-                {_.get(this.props, 'data.config.footer.content', null) && (
-                <span className="copyright">{htmlToReact(_.get(this.props, 'data.config.footer.content', null))}</span>
-                )}
-                {_.map(_.get(this.props, 'data.config.footer.links', null), (action, action_idx) => (
-                <Link key={action_idx} href={withPrefix(_.get(action, 'url', null))}
-                  {...(_.get(action, 'new_window', null) ? ({target: '_blank'}) : null)}
-                  {...((_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)) ? ({rel: (_.get(action, 'new_window', null) ? ('noopener ') : '') + (_.get(action, 'no_follow', null) ? ('nofollow') : '')}) : null)}
-                  className={classNames({'button': _.get(action, 'style', null) === 'button'})}>{_.get(action, 'label', null)}</Link>
-                ))}
-              </p>
-              <Link id="to-top" className="to-top" href="#page"><span className="icon-arrow-up" aria-hidden="true" /><span
-                  className="screen-reader-text">Back to top</span></Link>
-            </footer>
-        );
-    }
+    return (
+        <footer className="footer">
+            <div className="container">
+                <div className="footer-content">
+                    <div className="footer-brand">
+                        <h3 className="footer-title">DevPortfolio</h3>
+                        <p className="footer-subtitle">Software Engineer & Data Scientist</p>
+                    </div>
+                    
+                    <nav className="footer-nav">
+                        <Link href={withPrefix('/')}>Home</Link>
+                        <Link href={withPrefix('/blog')}>Articles</Link>
+                        <Link href={withPrefix('/projects')}>Projects</Link>
+                        <Link href={withPrefix('/contact')}>Newsletter</Link>
+                        <Link href={withPrefix('/about')}>Resume</Link>
+                    </nav>
+                    
+                    <div className="footer-bottom">
+                        <p className="footer-copyright">© {currentYear} John Doe. All rights reserved.</p>
+                        <p className="footer-credit">Designed & Built with ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
 }

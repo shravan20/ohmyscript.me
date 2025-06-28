@@ -1,79 +1,72 @@
-import React from 'react';
-import _ from 'lodash';
+import React, { useState, useEffect } from 'react';
+import { Link, withPrefix } from '../utils';
 
-import {Link, withPrefix, classNames} from '../utils';
-import Icon from './Icon';
+export default function Header({ data, page }) {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
-export default class Header extends React.Component {
-    render() {
-        return (
-            <header id="masthead" className={'site-header ' + _.get(this.props, 'data.config.header.background', null)}>
-              <div className="site-header-wrap">
-                <div className="site-header-inside">
-                  <div className="site-branding">
-                    {_.get(this.props, 'data.config.header.profile_img', null) && (
-                    <p className="profile">
-                      <Link href={withPrefix('/')}><img src={withPrefix(_.get(this.props, 'data.config.header.profile_img', null))}
-                          className="avatar" alt={_.get(this.props, 'data.config.header.profile_img_alt', null)} /></Link>
-                    </p>
-                    )}
-                    <div className="site-identity">
-                      <p className="site-title"><Link href={withPrefix('/')}>{_.get(this.props, 'data.config.header.title', null)}</Link></p>
-                      {_.get(this.props, 'data.config.header.tagline', null) && (
-                      <p className="site-description">{_.get(this.props, 'data.config.header.tagline', null)}</p>
-                      )}
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const navItems = [
+        { label: 'About', url: '/about' },
+        { label: 'Projects', url: '/projects' },
+        { label: 'Articles', url: '/blog' },
+        { label: 'Contact', url: '/contact' }
+    ];
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
+        <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
+            <div className="container">
+                <div className="header-content">
+                    <div className="header-brand">
+                        <Link href={withPrefix('/')} className="brand-link">
+                            <span className="brand-text">SK</span>
+                        </Link>
                     </div>
-                    {(_.get(this.props, 'data.config.header.has_nav', null) || _.get(this.props, 'data.config.header.has_social', null)) && (
-                    <button id="menu-toggle" className="menu-toggle"><span className="screen-reader-text">Menu</span><span className="icon-menu"
-                        aria-hidden="true" /></button>
-                    )}
-                  </div>
-                  {(_.get(this.props, 'data.config.header.has_nav', null) || _.get(this.props, 'data.config.header.has_social', null)) && (
-                  <nav id="main-navigation" className="site-navigation" aria-label="Main Navigation">
-                    <div className="site-nav-wrap">
-                      <div className="site-nav-inside">
-                        {_.get(this.props, 'data.config.header.has_nav', null) && (
-                        <ul className="menu">
-                          {_.map(_.get(this.props, 'data.config.header.nav_links', null), (action, action_idx) => {
-                              let pageUrl = _.trim(_.get(this.props, 'page.__metadata.urlPath', null), '/');
-                              let actionUrl = _.trim(_.get(action, 'url', null), '/');
-                              return (
-                                <li key={action_idx} className={classNames('menu-item', {'current-menu-item': pageUrl === actionUrl, 'menu-button': _.get(action, 'style', null) === 'button'})}>
-                                  <Link href={withPrefix(_.get(action, 'url', null))}
-                                    {...(_.get(action, 'new_window', null) ? ({target: '_blank'}) : null)}
-                                    {...((_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)) ? ({rel: (_.get(action, 'new_window', null) ? ('noopener ') : '') + (_.get(action, 'no_follow', null) ? ('nofollow') : '')}) : null)}
-                                    className={classNames({'button': _.get(action, 'style', null) === 'button'})}>{_.get(action, 'label', null)}</Link>
+                    
+                    <nav className={`header-nav ${isMenuOpen ? 'nav-open' : ''}`}>
+                        <ul className="nav-list">
+                            {navItems.map((item, index) => (
+                                <li key={index} className="nav-item">
+                                    <Link 
+                                        href={withPrefix(item.url)} 
+                                        className={`nav-link ${page?.__metadata?.urlPath === item.url ? 'nav-link-active' : ''}`}
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {item.label}
+                                    </Link>
                                 </li>
-                              )
-                          })}
+                            ))}
                         </ul>
-                        )}
-                        {_.get(this.props, 'data.config.header.has_social', null) && (
-                        <div className="social-links">
-                          {_.map(_.get(this.props, 'data.config.header.social_links', null), (action, action_idx) => (
-                          action && (
-                          <Link key={action_idx} href={withPrefix(_.get(action, 'url', null))}
-                            {...(_.get(action, 'new_window', null) ? ({target: '_blank'}) : null)}
-                            {...((_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)) ? ({rel: (_.get(action, 'new_window', null) ? ('noopener ') : '') + (_.get(action, 'no_follow', null) ? ('nofollow') : '')}) : null)}
-                            className={classNames({'button button-icon': _.get(action, 'style', null) === 'icon'})}>
-                            {((_.get(action, 'style', null) === 'icon') && _.get(action, 'icon_class', null)) ? (<React.Fragment>
-                              <Icon {...this.props} icon={_.get(action, 'icon_class', null)} />
-                              <span className="screen-reader-text">{_.get(action, 'label', null)}</span>
-                            </React.Fragment>) : 
-                            _.get(action, 'label', null)
-                            }
-                          </Link>
-                          )
-                          ))}
-                        </div>
-                        )}
-                      </div>
+                    </nav>
+
+                    <div className="header-actions">
+                        <Link href={withPrefix('/contact')} className="btn btn-primary btn-sm">
+                            Get In Touch
+                        </Link>
+                        <button 
+                            className={`menu-toggle ${isMenuOpen ? 'menu-toggle-active' : ''}`}
+                            onClick={toggleMenu}
+                            aria-label="Toggle menu"
+                        >
+                            <span className="menu-toggle-bar"></span>
+                            <span className="menu-toggle-bar"></span>
+                            <span className="menu-toggle-bar"></span>
+                        </button>
                     </div>
-                  </nav>
-                  )}
                 </div>
-              </div>
-            </header>
-        );
-    }
+            </div>
+        </header>
+    );
 }
