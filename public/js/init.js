@@ -33,16 +33,23 @@ function navToggleHandler(e) {
 }
 
 window.addMainNavigationHandlers = function() {
-  document.getElementById('menu-toggle').addEventListener('click', navToggleHandler, false);
+  const menuToggle = document.getElementById('menu-toggle');
+  if (menuToggle) {
+    menuToggle.addEventListener('click', navToggleHandler, false);
+  }
 };
 
 window.removeMainNavigationHandlers = function() {
   document.body.classList.remove('menu--opened');
-  document.getElementById('menu-toggle').removeEventListener('click', navToggleHandler, false);
+  const menuToggle = document.getElementById('menu-toggle');
+  if (menuToggle) {
+    menuToggle.removeEventListener('click', navToggleHandler, false);
+  }
 };
 
 window.addEventListener('resize', function () {
-  if (document.getElementById('menu-toggle').offsetParent === null) {
+  const menuToggle = document.getElementById('menu-toggle');
+  if (menuToggle && menuToggle.offsetParent === null) {
     document.body.classList.remove('menu--opened');
   }
 }, true);
