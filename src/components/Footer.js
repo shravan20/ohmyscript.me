@@ -9,7 +9,7 @@ export default function Footer({ data }) {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <h3 className="footer-title">DevPortfolio</h3>
+                        <h3 className="footer-title">OhMyScript</h3>
                         <p className="footer-subtitle">Software Engineer & Data Scientist</p>
                     </div>
                     
@@ -22,7 +22,7 @@ export default function Footer({ data }) {
                     </nav>
                     
                     <div className="footer-bottom">
-                        <p className="footer-copyright">© {currentYear} John Doe. All rights reserved.</p>
+                        <p className="footer-copyright">© {currentYear} Shravan. All rights reserved.</p>
                         <p className="footer-credit">Designed & Built with ❤️</p>
                     </div>
                 </div>

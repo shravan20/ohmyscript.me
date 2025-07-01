@@ -13,7 +13,10 @@ import SectionPosts from './SectionPosts';
 import Hero from './Hero';
 import TechStack from './TechStack';
 import Projects from './Projects';
+import ProjectsPage from './ProjectsPage';
+import ProjectPreview from './ProjectPreview';
 import Articles from './Articles';
+import ArticlesPage from './ArticlesPage';
 import Newsletter from './Newsletter';
 import StackLife from './StackLife';
 
@@ -31,7 +34,10 @@ export {
     Hero,
     TechStack,
     Projects,
+    ProjectsPage,
+    ProjectPreview,
     Articles,
+    ArticlesPage,
     Newsletter,
     StackLife
 };
@@ -50,7 +56,10 @@ export default {
     Hero,
     TechStack,
     Projects,
+    ProjectsPage,
+    ProjectPreview,
     Articles,
+    ArticlesPage,
     Newsletter,
     StackLife
 };
