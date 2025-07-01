@@ -7,6 +7,11 @@ sourcebit.fetch(sourcebitConfig);
 
 module.exports = {
     trailingSlash: true,
+    output: 'export',
+    distDir: 'out',
+    images: {
+        unoptimized: true
+    },
     sassOptions: {
         // scss files might import plain css files from the "public" folder:
         // @import "example.css";
