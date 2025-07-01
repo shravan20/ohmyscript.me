@@ -17,10 +17,23 @@ class Page extends React.Component {
 }
 
 export async function getStaticPaths() {
-    console.log('Page [...slug].js getStaticPaths');
-    // filter out the root page as it has its own page file `src/pages/index.js`
+    console.log('=== Page [...slug].js getStaticPaths ===');
+    
+    // Get paths from sourcebit
     const paths = await sourcebitDataClient.getStaticPaths();
-    return { paths: _.reject(paths, path => path === '/'), fallback: false };
+    console.log('All paths from sourcebitDataClient:', paths);
+    
+    // Filter out the root page as it has its own page file `src/pages/index.js`
+    const filteredPaths = _.reject(paths, path => path === '/');
+    console.log('Filtered paths (excluding root):', filteredPaths);
+    
+    // Check specifically for projects and blog paths
+    const hasProjects = paths.includes('/projects');
+    const hasBlog = paths.includes('/blog');
+    console.log('Has /projects path:', hasProjects);
+    console.log('Has /blog path:', hasBlog);
+    
+    return { paths: filteredPaths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {

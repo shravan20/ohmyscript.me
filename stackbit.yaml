@@ -274,8 +274,26 @@ models:
     type: page
     urlPath: /blog
     label: Blog
-    layout: blog
+    layout: page
     file: blog/index.md
+    hideContent: false
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: model
+        name: seo
+        models:
+          - stackbit_page_meta
+  projects:
+    type: page
+    urlPath: /projects
+    label: Projects
+    layout: projects
+    file: projects/index.md
     hideContent: true
     singleInstance: true
     fields:
@@ -284,6 +302,14 @@ models:
         label: Title
         description: The title of the page.
         required: true
+      - type: boolean
+        name: hide_title
+        label: Hide page title
+        default: true
+      - type: string
+        name: excerpt
+        label: Excerpt
+        description: The excerpt of the page displayed in meta data.
       - type: model
         name: seo
         models:

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, withPrefix } from '../utils';
+import NextLink from 'next/link';
 
 export default function Header({ data, page }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Header({ data, page }) {
                 <div className="header-content">
                     <div className="header-brand">
                         <Link href={withPrefix('/')} className="brand-link">
-                            <span className="brand-text">DevPortfolio</span>
+                            <span className="brand-text">OhMyScript</span>
                         </Link>
                     </div>
                     
@@ -58,7 +59,17 @@ export default function Header({ data, page }) {
                         <ul className="nav-list">
                             {navItems.map((item, index) => (
                                 <li key={index} className="nav-item">
-                                    {item.url.startsWith('#') ? (
+                                    {item.url === '/blog' ? (
+                                        <NextLink href="/blog" passHref>
+                                            <a 
+                                                className={`nav-link ${page?.__metadata?.urlPath === item.url ? 'nav-link-active' : ''}`}
+                                                onClick={() => setIsMenuOpen(false)}
+                                            >
+                                                {item.icon && <span className="nav-icon">{item.icon}</span>}
+                                                {item.label}
+                                            </a>
+                                        </NextLink>
+                                    ) : item.url.startsWith('#') ? (
                                         <a 
                                             href={item.url}
                                             className={`nav-link ${page?.__metadata?.urlPath === item.url ? 'nav-link-active' : ''}`}
