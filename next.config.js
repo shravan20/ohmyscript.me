@@ -7,8 +7,6 @@ sourcebit.fetch(sourcebitConfig);
 
 module.exports = {
     trailingSlash: true,
-    output: 'export',
-    distDir: 'out',
     images: {
         unoptimized: true
     },

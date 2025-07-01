@@ -24,14 +24,13 @@ export async function getStaticPaths() {
     console.log('All paths from sourcebitDataClient:', paths);
     
     // Filter out the root page as it has its own page file `src/pages/index.js`
-    const filteredPaths = _.reject(paths, path => path === '/');
-    console.log('Filtered paths (excluding root):', filteredPaths);
+    // Also filter out /blog as it has its own page file `src/pages/blog.js`
+    const filteredPaths = _.reject(paths, path => path === '/' || path === '/blog');
+    console.log('Filtered paths (excluding root and blog):', filteredPaths);
     
-    // Check specifically for projects and blog paths
+    // Check specifically for projects path
     const hasProjects = paths.includes('/projects');
-    const hasBlog = paths.includes('/blog');
     console.log('Has /projects path:', hasProjects);
-    console.log('Has /blog path:', hasBlog);
     
     return { paths: filteredPaths, fallback: false };
 }
