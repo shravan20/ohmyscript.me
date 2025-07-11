@@ -19,9 +19,8 @@
     }
   }
   
-  // Light mode styles
   [data-theme="light"] & {
-    background-color: rgba(249, 245, 215, 0.95); // Light cream with transparency
+    background-color: rgba(249, 245, 215, 0.95);
     
     &.header-scrolled {
       background-color: rgba(249, 245, 215, 0.98);
@@ -207,7 +206,6 @@
   }
 }
 
-// Add padding to body to account for fixed header
 body {
   padding-top: 80px;
   

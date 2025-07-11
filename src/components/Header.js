@@ -5,10 +5,9 @@ import NextLink from 'next/link';
 export default function Header({ data, page }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(false); // Default to light mode
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
-        // Check for saved theme preference or default to dark mode
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         

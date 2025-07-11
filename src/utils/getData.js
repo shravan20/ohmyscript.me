@@ -5,7 +5,6 @@ export default function getData(props, dataPath) {
     if (_.startsWith(dataPath, 'content/data/')) {
         dataPath = dataPath.replace('content/data/', '');
     }
-    // remove extension
     dataPath = dataPath.replace(/\.\w+$/, '');
     const path = dataPath.split('/');
     return _.get(props, path);

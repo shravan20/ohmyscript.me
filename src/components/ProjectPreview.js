@@ -4,7 +4,6 @@ import { withPrefix } from '../utils';
 const ProjectPreview = ({ project, isOpen, onClose }) => {
     if (!isOpen || !project) return null;
 
-    // Handle escape key to close modal
     React.useEffect(() => {
         const handleEscape = (e) => {
             if (e.key === 'Escape') {
@@ -23,7 +22,6 @@ const ProjectPreview = ({ project, isOpen, onClose }) => {
         };
     }, [isOpen, onClose]);
 
-    // Handle backdrop click
     const handleBackdropClick = (e) => {
         if (e.target === e.currentTarget) {
             onClose();

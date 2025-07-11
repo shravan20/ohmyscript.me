@@ -5,7 +5,6 @@
 
 // Variables
 :root {
-  // Dark mode variables (default)
   --color-background: #0f0f23;
   --color-surface: #1a1a3a;
   --color-primary: #ffffff;
@@ -17,46 +16,32 @@
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   
-  // Dark mode shadow variables
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
   
-  // Light mode variables - Gruvbox-inspired
   &[data-theme="light"] {
-    // Background Colors
-    --color-background: #f9f5d7;  // Light cream background
-    --color-surface: #f2e5bc;     // Slightly darker beige
-    --color-surface-alt: #ebdbb2; // Soft yellowish-brown
-    --color-surface-mute: #d5c4a1; // Muted tan color
+    --color-background: #f9f5d7;
+    --color-surface: #f2e5bc;
+    --color-surface-alt: #ebdbb2;
+    --color-surface-mute: #d5c4a1;
+    --color-primary: #3c3836;
+    --color-secondary: #504945;
+    --color-tertiary: #665c54;
+    --color-accent: #076678;
+    --color-accent-hover: #458588;
+    --color-accent-light: #83a598;
+    --color-accent-dark: #0d3a49;
+    --color-success: #79740e;
+    --color-warning: #b57614;
+    --color-error: #cc241d;
+    --color-border: #d5c4a1;
+    --color-divider: #ebdbb2;
+    --color-link: #076678;
+    --color-link-hover: #458588;
     
-    // Text Colors
-    --color-primary: #3c3836;     // Main text (dark brown)
-    --color-secondary: #504945;   // Secondary text (gray-brown)
-    --color-tertiary: #665c54;    // Tertiary/subtle text
-    
-    // Brand / Accent Colors
-    --color-accent: #076678;      // Main accent (deep aqua)
-    --color-accent-hover: #458588; // Slightly lighter blue-green
-    --color-accent-light: #83a598; // Soft blue-tinted
-    --color-accent-dark: #0d3a49; // Dark teal
-    
-    // Utility Colors
-    --color-success: #79740e;     // Gruvbox green
-    --color-warning: #b57614;     // Gruvbox yellow
-    --color-error: #cc241d;       // Gruvbox red
-    
-    // Border & Divider Colors
-    --color-border: #d5c4a1;      // Light tan for borders
-    --color-divider: #ebdbb2;     // Soft beige divider
-    
-    // Link Colors
-    --color-link: #076678;        // Normal link color (aqua)
-    --color-link-hover: #458588;  // Hover color (lighter aqua)
-    
-    // Light mode shadows
     --shadow-sm: 0 1px 2px 0 rgba(60, 56, 54, 0.1);
     --shadow: 0 1px 3px 0 rgba(60, 56, 54, 0.1), 0 1px 2px -1px rgba(60, 56, 54, 0.1);
     --shadow-md: 0 4px 6px -1px rgba(60, 56, 54, 0.1), 0 2px 4px -2px rgba(60, 56, 54, 0.1);
@@ -67,7 +52,7 @@
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
-  --font-family: var(--font-body); // Keep for backward compatibility
+  --font-family: var(--font-body);
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -104,7 +89,6 @@
   --z-tooltip: 1060;
 }
 
-// Reset and base styles
 * {
   margin: 0;
   padding: 0;
@@ -127,7 +111,6 @@ body {
   overflow-x: hidden;
 }
 
-// Focus styles for accessibility
 *:focus {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
@@ -185,7 +168,6 @@ p {
   @extend .body-medium;
 }
 
-// Code and preformatted text
 code, kbd, samp, pre {
   font-family: var(--font-mono);
 }
@@ -223,7 +205,6 @@ a {
   }
 }
 
-// Import component styles
 @import 'components/typography';
 @import 'components/layout';
 @import 'components/header';

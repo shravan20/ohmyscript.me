@@ -3,10 +3,8 @@ import moment from 'moment-strftime';
 import { withPrefix, getPages } from '../utils';
 
 export default function Articles({ pages }) {
-    // Get blog posts from pages data
     const blogPosts = pages ? getPages(pages, '/posts') : [];
     
-    // Use dynamic content if available, otherwise fallback to sample
     const articles = blogPosts.length > 0 ? blogPosts.slice(0, 3).map((post, index) => ({
         id: index + 1,
         title: post.frontmatter.title,

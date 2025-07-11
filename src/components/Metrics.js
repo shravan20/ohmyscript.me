@@ -27,7 +27,6 @@ export default function Metrics() {
 
     useEffect(() => {
         if (isVisible) {
-            // Animate commits counter
             const commitsInterval = setInterval(() => {
                 setAnimatedNumbers(prev => {
                     if (prev.commits < 500) {
@@ -38,7 +37,6 @@ export default function Metrics() {
                 });
             }, 30);
 
-            // Animate years counter
             const yearsInterval = setInterval(() => {
                 setAnimatedNumbers(prev => {
                     if (prev.years < 6) {

@@ -26,12 +26,10 @@
   align-items: center;
   position: relative;
   
-  // Hero is section 1 (primary) - light cream
   [data-theme="light"] & {
-    background-color: #f9f5d7; // Light cream
+    background-color: #f9f5d7;
   }
   
-  // Dark mode - use main background
   [data-theme="dark"] & {
     background-color: var(--color-background);
   }
