@@ -26,20 +26,14 @@
 }
 
 .newsletter-title {
-  font-size: var(--font-size-3xl);
-  font-weight: 700;
+  @extend .heading-2;
   color: white;
   margin-bottom: var(--spacing-4);
-  
-  @media (min-width: 768px) {
-    font-size: var(--font-size-4xl);
-  }
 }
 
 .newsletter-description {
-  font-size: var(--font-size-lg);
+  @extend .body-large;
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.6;
 }
 
 .newsletter-form-wrapper {

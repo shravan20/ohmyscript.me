@@ -183,8 +183,8 @@ export default function Projects({ showAllProjects = false }) {
             <div className="container">
                 {!showAllProjects && (
                     <div className="section-header">
-                        <h2 className="section-title">Featured Projects</h2>
-                        <p className="section-subtitle">
+                        <h2 className="section-title heading-2">Featured Projects</h2>
+                        <p className="section-subtitle body-large">
                             Some of the projects I've been working on
                         </p>
                     </div>

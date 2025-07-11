@@ -12,8 +12,20 @@ class MyDocument extends Document {
 
     render() {
         return (
-            <Html>
-                <Head />
+            <Html data-theme="light">
+                <Head>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                (function() {
+                                    const theme = localStorage.getItem('theme') || 
+                                                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                                    document.documentElement.setAttribute('data-theme', theme);
+                                })();
+                            `,
+                        }}
+                    />
+                </Head>
                 <body>
                     <Main />
                     <ScriptTag src={withPrefix('js/init.js')}/>

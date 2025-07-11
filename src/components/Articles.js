@@ -49,8 +49,8 @@ export default function Articles({ pages }) {
         <section className="articles" id="articles">
             <div className="container">
                 <div className="section-header">
-                    <h2 className="section-title">Latest Articles</h2>
-                    <p className="section-subtitle">
+                    <h2 className="section-title heading-2">Latest Articles</h2>
+                    <p className="section-subtitle body-large">
                         Thoughts, tutorials, and insights from my journey
                     </p>
                 </div>
@@ -61,17 +61,17 @@ export default function Articles({ pages }) {
                                 <img src={withPrefix(article.image)} alt={article.title} />
                             </div>
                             <div className="article-content">
-                                <div className="article-meta">
+                                <div className="article-meta meta-text">
                                     <time className="article-date">
                                         {moment(article.date).format('MMM DD, YYYY')}
                                     </time>
                                     <span className="article-read-time">{article.readTime}</span>
                                 </div>
-                                <h3 className="article-title">
+                                <h3 className="article-title heading-4">
                                     <a href={article.url}>{article.title}</a>
                                 </h3>
-                                <p className="article-excerpt">{article.excerpt}</p>
-                                <a href={article.url} className="article-link">Read More</a>
+                                <p className="article-excerpt body-medium text-clamp-3">{article.excerpt}</p>
+                                <a href={article.url} className="article-link body-medium">Read More</a>
                             </div>
                         </article>
                     ))}

@@ -51,13 +51,13 @@ export default function Hero({ data }) {
                         </div>
                     </div>
                     <div className="hero-text">
-                        <h1 className="hero-title">
-                            Building <span className="hero-highlight">intelligent</span> solutions
+                        <h1 className="hero-title heading-1">
+                            Nullus <span className="hero-highlight">Bugus</span> Maximus
                         </h1>
-                        <p className="hero-subtitle">
-                            Software Engineering + Data Science
+                        <p className="hero-subtitle body-large">
+                            Computer Science Engineer + Data Science Aficionado
                         </p>
-                        <p className="hero-role">
+                        <p className="hero-role body-medium">
                             I am a <span className="role-highlight typewriter">
                                 {displayText}
                                 <span className="cursor">|</span>

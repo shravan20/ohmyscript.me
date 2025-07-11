@@ -4,16 +4,17 @@
 }
 
 .form-label {
+  @extend .body-medium;
   display: block;
   font-weight: 500;
   color: var(--color-primary);
   margin-bottom: var(--spacing-2);
-  font-size: var(--font-size-sm);
 }
 
 .form-input,
 .form-textarea,
 .form-select {
+  @extend .body-medium;
   width: 100%;
   padding: var(--spacing-3) var(--spacing-4);
   border: 2px solid var(--color-border);
@@ -21,8 +22,8 @@
   background-color: var(--color-surface);
   color: var(--color-primary);
   font-family: inherit;
-  font-size: var(--font-size-base);
   transition: all 0.2s ease;
+  margin: 0;
   
   &::placeholder {
     color: var(--color-secondary);
@@ -56,12 +57,13 @@
 
 .form-checkbox-label,
 .form-radio-label {
+  @extend .body-small;
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-2);
-  font-size: var(--font-size-sm);
   color: var(--color-secondary);
   cursor: pointer;
+  margin: 0;
   
   input {
     margin-top: 2px;
@@ -69,14 +71,14 @@
 }
 
 .form-error-message {
+  @extend .caption;
   color: var(--color-error);
-  font-size: var(--font-size-xs);
   margin-top: var(--spacing-1);
 }
 
 .form-help {
+  @extend .caption;
   color: var(--color-secondary);
-  font-size: var(--font-size-xs);
   margin-top: var(--spacing-1);
 }
 

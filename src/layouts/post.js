@@ -49,9 +49,9 @@ export default class Post extends React.Component {
                             <h1 className="post-title">{_.get(this.props, 'page.frontmatter.title', null)}</h1>
                             
                             <div className="post-meta">
-                                <span>🕒 {readTime} min read</span>
+                                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{display: 'inline', marginRight: '4px'}}><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/></svg> {readTime} min read</span>
                                 <span className="dot">•</span>
-                                <span className="cognitive-load">🧠 Cognitive Load: Moderate</span>
+                                <span className="cognitive-load"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style={{display: 'inline', marginRight: '4px'}}><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"/></svg> Cognitive Load: Moderate</span>
                                 <span className="dot">•</span>
                                 <time className="post-date">
                                     {moment(_.get(this.props, 'page.frontmatter.date', null)).strftime('%b %d, %Y')}

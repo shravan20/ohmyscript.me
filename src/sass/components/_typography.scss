@@ -1,0 +1,445 @@
+// Typography System for Consistent Text Alignment and Styling
+
+// Base typography classes for consistent alignment
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+// Responsive text alignment utilities
+@media (min-width: 768px) {
+  .md\:text-left { text-align: left; }
+  .md\:text-center { text-align: center; }
+  .md\:text-right { text-align: right; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-left { text-align: left; }
+  .lg\:text-center { text-align: center; }
+  .lg\:text-right { text-align: right; }
+}
+
+// Consistent heading system
+.heading-1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-4);
+  letter-spacing: -0.025em;
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-4xl);
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+.heading-2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-4);
+  letter-spacing: -0.02em;
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-3xl);
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+.heading-3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-3);
+  letter-spacing: -0.015em;
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-2xl);
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+.heading-4 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-3);
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-xl);
+  }
+  
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+// Consistent body text system
+.body-large {
+  font-family: var(--font-body);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-4);
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-xl);
+    line-height: 1.75;
+  }
+}
+
+.body-medium {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-4);
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-lg);
+  }
+}
+
+.body-small {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-3);
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-base);
+  }
+}
+
+// Consistent caption and meta text
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  opacity: 0.8;
+  
+  @media (min-width: 768px) {
+    font-size: var(--font-size-sm);
+  }
+}
+
+.meta-text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  opacity: 0.9;
+}
+
+// Text emphasis utilities
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-error { color: var(--color-error); }
+
+// Font weight utilities
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+// Line height utilities
+.leading-none { line-height: 1; }
+.leading-tight { line-height: 1.25; }
+.leading-snug { line-height: 1.375; }
+.leading-normal { line-height: 1.5; }
+.leading-relaxed { line-height: 1.625; }
+.leading-loose { line-height: 2; }
+
+// Letter spacing utilities
+.tracking-tighter { letter-spacing: -0.05em; }
+.tracking-tight { letter-spacing: -0.025em; }
+.tracking-normal { letter-spacing: 0em; }
+.tracking-wide { letter-spacing: 0.025em; }
+.tracking-wider { letter-spacing: 0.05em; }
+
+// Text truncation and overflow
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Content width constraints for better readability
+.content-narrow {
+  max-width: 65ch; // Optimal for reading body text
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-medium {
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-wide {
+  max-width: 100ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Consistent section spacing and alignment
+.section-content {
+  .section-title {
+    @extend .heading-2;
+    text-align: center;
+    margin-bottom: var(--spacing-6);
+    
+    @media (min-width: 768px) {
+      margin-bottom: var(--spacing-8);
+    }
+  }
+  
+  .section-subtitle {
+    @extend .body-large;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto var(--spacing-8);
+    opacity: 0.9;
+    
+    @media (min-width: 768px) {
+      margin-bottom: var(--spacing-12);
+    }
+  }
+  
+  .section-description {
+    @extend .body-medium;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-6);
+    
+    @media (min-width: 768px) {
+      margin-bottom: var(--spacing-8);
+    }
+  }
+}
+
+// Card content alignment
+.card-content {
+  .card-title {
+    @extend .heading-4;
+    margin-bottom: var(--spacing-3);
+  }
+  
+  .card-subtitle {
+    @extend .body-small;
+    margin-bottom: var(--spacing-2);
+    opacity: 0.8;
+  }
+  
+  .card-description {
+    @extend .body-medium;
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .card-meta {
+    @extend .meta-text;
+    margin-bottom: var(--spacing-2);
+  }
+}
+
+// List styling for consistent alignment
+.styled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    position: relative;
+    padding-left: var(--spacing-6);
+    margin-bottom: var(--spacing-3);
+    line-height: 1.6;
+    
+    &::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+  }
+}
+
+// Quote styling
+.quote {
+  position: relative;
+  padding: var(--spacing-6);
+  background: var(--color-surface);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  margin: var(--spacing-6) 0;
+  
+  .quote-text {
+    @extend .body-large;
+    font-style: italic;
+    margin-bottom: var(--spacing-3);
+    color: var(--color-primary);
+  }
+  
+  .quote-author {
+    @extend .meta-text;
+    font-weight: 600;
+    color: var(--color-accent);
+  }
+}
+
+// Highlight text
+.highlight {
+  background: linear-gradient(120deg, var(--color-accent) 0%, var(--color-accent) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+// Responsive text utilities
+@media (max-width: 767px) {
+  .text-sm-center { text-align: center; }
+  .text-sm-left { text-align: left; }
+}
+
+// Consistency helpers for specific components
+.hero-text-content {
+  .hero-title { @extend .heading-1; }
+  .hero-subtitle { @extend .body-large; }
+  .hero-description { @extend .body-medium; }
+}
+
+.metrics-text-content {
+  .metrics-title { @extend .heading-2; }
+  .metrics-subtitle { @extend .body-large; }
+  .metric-number { @extend .heading-3; }
+  .metric-label { @extend .body-medium; }
+  .metric-sublabel { @extend .body-small; }
+}
+
+.article-text-content {
+  .article-title { @extend .heading-4; }
+  .article-excerpt { @extend .body-medium; }
+  .article-meta { @extend .meta-text; }
+}
+
+.project-text-content {
+  .project-title { @extend .heading-4; }
+  .project-description { @extend .body-medium; }
+  .project-tech { @extend .caption; }
+}
+
+// Responsive text alignment mixins
+@mixin text-align-responsive($mobile: center, $tablet: null, $desktop: null) {
+  text-align: $mobile;
+  
+  @if $tablet {
+    @media (min-width: 768px) {
+      text-align: $tablet;
+    }
+  }
+  
+  @if $desktop {
+    @media (min-width: 1024px) {
+      text-align: $desktop;
+    }
+  }
+}
+
+// Content alignment mixins
+@mixin content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin content-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@mixin content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+// Consistent section content alignment
+.section-content-center {
+  @include content-center;
+}
+
+.section-content-left {
+  @include content-left;
+}
+
+.section-content-right {
+  @include content-right;
+}
+
+// Responsive section content alignment
+.section-content-responsive {
+  @include content-center;
+  
+  @media (min-width: 1024px) {
+    @include content-left;
+  }
+}

@@ -1,5 +1,6 @@
 // Button styles
 .btn {
+  @extend .body-medium;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -8,12 +9,12 @@
   border: 2px solid transparent;
   border-radius: var(--border-radius);
   font-family: inherit;
-  font-size: var(--font-size-base);
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+  margin: 0;
   
   &:focus {
     outline: none;
@@ -31,6 +32,11 @@
   background-color: var(--color-accent);
   color: white;
   border-color: var(--color-accent);
+  
+  // Light mode specific styling
+  [data-theme="light"] & {
+    color: #f9f5d7; // Cream text on buttons
+  }
   
   &:hover:not(:disabled) {
     background-color: var(--color-accent-hover);
@@ -67,13 +73,17 @@
 }
 
 .btn-sm {
+  @extend .body-small;
   padding: var(--spacing-2) var(--spacing-4);
-  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin: 0;
 }
 
 .btn-lg {
+  @extend .body-large;
   padding: var(--spacing-4) var(--spacing-8);
-  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin: 0;
 }
 
 // Button groups

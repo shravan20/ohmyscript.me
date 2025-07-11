@@ -19,6 +19,7 @@ import Articles from './Articles';
 import ArticlesPage from './ArticlesPage';
 import Newsletter from './Newsletter';
 import StackLife from './StackLife';
+import Metrics from './Metrics';
 
 export {
     CtaButtons,
@@ -39,7 +40,8 @@ export {
     Articles,
     ArticlesPage,
     Newsletter,
-    StackLife
+    StackLife,
+    Metrics
 };
 
 export default {
@@ -61,5 +63,6 @@ export default {
     Articles,
     ArticlesPage,
     Newsletter,
-    StackLife
+    StackLife,
+    Metrics
 };

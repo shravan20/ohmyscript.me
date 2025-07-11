@@ -16,16 +16,12 @@
 
 .footer-brand {
   .footer-title {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--color-primary);
+    @extend .heading-4;
     margin-bottom: var(--spacing-2);
   }
   
   .footer-subtitle {
-    color: var(--color-secondary);
-    font-size: var(--font-size-base);
+    @extend .body-medium;
     margin: 0;
   }
 }
@@ -37,10 +33,11 @@
   gap: var(--spacing-6);
   
   a {
+    @extend .body-medium;
     color: var(--color-secondary);
     text-decoration: none;
-    font-size: var(--font-size-base);
     transition: color 0.2s ease;
+    margin: 0;
     
     &:hover {
       color: var(--color-accent);
@@ -69,9 +66,12 @@
 
 .footer-copyright,
 .footer-credit {
-  color: var(--color-secondary);
-  font-size: var(--font-size-sm);
+  @extend .body-small;
   margin: 0;
+}
+
+.footer-copyright {
+  color: var(--color-secondary);
 }
 
 .footer-credit {

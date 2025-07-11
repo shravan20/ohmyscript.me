@@ -10,8 +10,25 @@
   z-index: var(--z-fixed);
   transition: all 0.3s ease;
   
+  // Dark mode styles
+  [data-theme="dark"] & {
+    background-color: rgba(15, 15, 35, 0.95);
+    
+    &.header-scrolled {
+      background-color: rgba(15, 15, 35, 0.98);
+    }
+  }
+  
+  // Light mode styles
+  [data-theme="light"] & {
+    background-color: rgba(249, 245, 215, 0.95); // Light cream with transparency
+    
+    &.header-scrolled {
+      background-color: rgba(249, 245, 215, 0.98);
+    }
+  }
+  
   &.header-scrolled {
-    background-color: rgba(15, 15, 35, 0.98);
     box-shadow: var(--shadow-lg);
   }
 }
@@ -95,6 +112,7 @@
 
 .nav-item {
   .nav-link {
+    @extend .body-medium;
     display: flex;
     align-items: center;
     gap: var(--spacing-2);
@@ -103,6 +121,7 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
+    margin: 0;
     
     @media (min-width: 768px) {
       padding: var(--spacing-2) var(--spacing-3);

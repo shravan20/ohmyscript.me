@@ -5,6 +5,7 @@
 
 // Variables
 :root {
+  // Dark mode variables (default)
   --color-background: #0f0f23;
   --color-surface: #1a1a3a;
   --color-primary: #ffffff;
@@ -15,6 +16,53 @@
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
+  
+  // Dark mode shadow variables
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  
+  // Light mode variables - Gruvbox-inspired
+  &[data-theme="light"] {
+    // Background Colors
+    --color-background: #f9f5d7;  // Light cream background
+    --color-surface: #f2e5bc;     // Slightly darker beige
+    --color-surface-alt: #ebdbb2; // Soft yellowish-brown
+    --color-surface-mute: #d5c4a1; // Muted tan color
+    
+    // Text Colors
+    --color-primary: #3c3836;     // Main text (dark brown)
+    --color-secondary: #504945;   // Secondary text (gray-brown)
+    --color-tertiary: #665c54;    // Tertiary/subtle text
+    
+    // Brand / Accent Colors
+    --color-accent: #076678;      // Main accent (deep aqua)
+    --color-accent-hover: #458588; // Slightly lighter blue-green
+    --color-accent-light: #83a598; // Soft blue-tinted
+    --color-accent-dark: #0d3a49; // Dark teal
+    
+    // Utility Colors
+    --color-success: #79740e;     // Gruvbox green
+    --color-warning: #b57614;     // Gruvbox yellow
+    --color-error: #cc241d;       // Gruvbox red
+    
+    // Border & Divider Colors
+    --color-border: #d5c4a1;      // Light tan for borders
+    --color-divider: #ebdbb2;     // Soft beige divider
+    
+    // Link Colors
+    --color-link: #076678;        // Normal link color (aqua)
+    --color-link-hover: #458588;  // Hover color (lighter aqua)
+    
+    // Light mode shadows
+    --shadow-sm: 0 1px 2px 0 rgba(60, 56, 54, 0.1);
+    --shadow: 0 1px 3px 0 rgba(60, 56, 54, 0.1), 0 1px 2px -1px rgba(60, 56, 54, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(60, 56, 54, 0.1), 0 2px 4px -2px rgba(60, 56, 54, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(60, 56, 54, 0.1), 0 4px 6px -4px rgba(60, 56, 54, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(60, 56, 54, 0.1), 0 8px 10px -6px rgba(60, 56, 54, 0.1);
+  }
   
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -47,12 +95,6 @@
   --border-radius: 0.5rem;
   --border-radius-lg: 0.75rem;
   --border-radius-xl: 1rem;
-  
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   
   --z-dropdown: 1000;
   --z-sticky: 1020;
@@ -106,32 +148,41 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
   color: var(--color-primary);
+  letter-spacing: -0.02em;
 }
 
 h1 {
-  font-size: var(--font-size-5xl);
-  font-weight: 700;
+  @extend .heading-1;
 }
 
 h2 {
-  font-size: var(--font-size-4xl);
-  font-weight: 600;
+  @extend .heading-2;
 }
 
 h3 {
-  font-size: var(--font-size-2xl);
-  font-weight: 600;
+  @extend .heading-3;
 }
 
 h4 {
-  font-size: var(--font-size-xl);
+  @extend .heading-4;
+}
+
+h5 {
+  font-size: var(--font-size-lg);
   font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-3);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-2);
 }
 
 p {
-  color: var(--color-secondary);
-  line-height: 1.7;
-  margin-bottom: var(--spacing-4);
+  @extend .body-medium;
 }
 
 // Code and preformatted text
@@ -173,9 +224,11 @@ a {
 }
 
 // Import component styles
+@import 'components/typography';
 @import 'components/layout';
 @import 'components/header';
 @import 'components/hero';
+@import 'components/metrics';
 @import 'components/tech-stack';
 @import 'components/stack-life';
 @import 'components/projects';
