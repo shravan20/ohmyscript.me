@@ -2,6 +2,11 @@
 .articles {
   padding: var(--spacing-20) 0;
   background-color: var(--color-surface);
+  
+  // Articles is section 4 (quaternary) - back to light cream
+  [data-theme="light"] & {
+    background-color: #f9f5d7; // Light cream (same as hero)
+  }
 }
 
 .articles-grid {

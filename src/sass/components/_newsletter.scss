@@ -3,6 +3,16 @@
   padding: var(--spacing-20) 0;
   background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
   color: white;
+  
+  // Newsletter is section 5 (quinary) - but keep gradient for visual impact
+  // The gradient provides enough contrast, so maintain special styling
+  [data-theme="light"] & {
+    background: linear-gradient(135deg, #076678 0%, #458588 100%); // Gruvbox aqua gradient
+  }
+  
+  [data-theme="dark"] & {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
+  }
 }
 
 .newsletter-content {

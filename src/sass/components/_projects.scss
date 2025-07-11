@@ -2,6 +2,13 @@
 .projects {
   padding: var(--spacing-20) 0;
   background-color: var(--color-background);
+  
+  // Projects is section 3 (tertiary) - same as section 2 (darker beige)
+  [data-theme="light"] & {
+    background-color: #f2e5bc; // Slightly darker beige (same as metrics)
+    border-top: 1px solid rgba(213, 196, 161, 0.3);
+    border-bottom: 1px solid rgba(213, 196, 161, 0.3);
+  }
 }
 
 .projects-grid {

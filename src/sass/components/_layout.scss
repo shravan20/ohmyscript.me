@@ -37,6 +37,63 @@
   }
 }
 
+// Section background variations for alternating pattern
+// Pattern: 2 sections light cream, 2 sections darker beige, repeat
+.section-primary {
+  background-color: var(--color-background);
+  
+  [data-theme="light"] & {
+    background-color: #f9f5d7; // Light cream
+  }
+}
+
+.section-secondary {
+  background-color: var(--color-surface);
+  
+  [data-theme="light"] & {
+    background-color: #f2e5bc; // Slightly darker beige
+    border-top: 1px solid rgba(213, 196, 161, 0.3);
+    border-bottom: 1px solid rgba(213, 196, 161, 0.3);
+  }
+}
+
+.section-tertiary {
+  background-color: var(--color-surface-alt, var(--color-surface));
+  
+  [data-theme="light"] & {
+    background-color: #f2e5bc; // Same as secondary (2nd in pair)
+    border-top: 1px solid rgba(213, 196, 161, 0.3);
+    border-bottom: 1px solid rgba(213, 196, 161, 0.3);
+  }
+}
+
+.section-quaternary {
+  background-color: var(--color-background);
+  
+  [data-theme="light"] & {
+    background-color: #f9f5d7; // Same as primary (back to light cream)
+  }
+}
+
+// Additional section classes for longer pages
+.section-quinary {
+  background-color: var(--color-background);
+  
+  [data-theme="light"] & {
+    background-color: #f9f5d7; // Light cream (continues pattern)
+  }
+}
+
+.section-senary {
+  background-color: var(--color-surface);
+  
+  [data-theme="light"] & {
+    background-color: #f2e5bc; // Darker beige
+    border-top: 1px solid rgba(213, 196, 161, 0.3);
+    border-bottom: 1px solid rgba(213, 196, 161, 0.3);
+  }
+}
+
 .section-header {
   text-align: center;
   margin-bottom: var(--spacing-12);
